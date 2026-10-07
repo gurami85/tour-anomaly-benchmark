@@ -6,7 +6,7 @@
 """
 import pandas as pd
 
-from . import extreme, shape, trend
+import extreme, shape, trend
 
 #: 이름 → (함수, 범주, 최소 표본 수, 한 줄 설명) , #알고리즘 레지스트리 딕셔너리
 ALGORITHMS = {

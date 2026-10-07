@@ -20,7 +20,7 @@
 import numpy as np
 from scipy import stats
 
-from .common import (cannot_judge, drop_missing, empty_result, make_result,
+from common import (cannot_judge, drop_missing, empty_result, make_result,
                      standardize)
 
 

@@ -10,9 +10,9 @@
 import argparse
 import time
 
-from .loader import PRESETS, load
-from .registry import catalog
-from .runner import detect_all, save, summarize
+from loader import PRESETS, load
+from registry import catalog
+from runner import detect_all, save, summarize
 
 
 def main():

@@ -22,9 +22,9 @@
     table, info = load("grid300m")
     found = detect_all(table, period=info["period"])
 """
-from .loader import PRESETS, load, load_long, load_single, load_wide
-from .registry import ALGORITHMS, catalog, run
-from .runner import detect_all, detect_one, save, summarize
+from loader import PRESETS, load, load_long, load_single, load_wide
+from registry import ALGORITHMS, catalog, run
+from runner import detect_all, detect_one, save, summarize
 
 __all__ = [
     "load", "load_wide", "load_long", "load_single", "PRESETS",

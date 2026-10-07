@@ -20,7 +20,7 @@
 """
 import numpy as np
 
-from .common import (cannot_judge, drop_missing, empty_result, mad,
+from common import (cannot_judge, drop_missing, empty_result, mad,
                      make_result, robust_standardize, standardize)
 
 

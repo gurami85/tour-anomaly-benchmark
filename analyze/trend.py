@@ -14,7 +14,7 @@
 import numpy as np
 import pandas as pd
 
-from .common import (cannot_judge, drop_missing, empty_result, make_result,
+from common import (cannot_judge, drop_missing, empty_result, make_result,
                      robust_standardize)
 
 

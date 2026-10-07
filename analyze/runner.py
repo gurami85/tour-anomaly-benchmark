@@ -20,7 +20,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from .registry import ALGORITHMS, run
+from registry import ALGORITHMS, run
 
 COLUMNS = ["time", "value", "algorithm", "category", "score"]
 
