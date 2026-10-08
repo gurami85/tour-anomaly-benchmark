@@ -1,0 +1,62 @@
+{
+  "dataset": {
+    "id": "JEJU_ARRIVAL_DAILY",
+    "name": "제주 입도 관광객 추이(일별)",
+    "source_format": "CSV",
+    "output_format": "Parquet"
+  },
+  "profile": {
+    "row_count": 4993,
+    "column_count": 4,
+    "total_cells": 19972,
+    "missing_count": 1968,
+    "missing_rate": 0.09853795313438814,
+    "duplicate_rows": 0,
+    "numeric_column_count": 3,
+    "categorical_column_count": 0,
+    "datetime_column_count": 1,
+    "numeric_columns": [
+      "domestic_visitors",
+      "foreign_visitors",
+      "total_visitors"
+    ],
+    "categorical_columns": [],
+    "datetime_columns": [
+      "date"
+    ],
+    "profiled_row_count": 4993,
+    "is_sampled": false,
+    "column_profiles": {
+      "date": {
+        "dtype": "datetime64[ns]",
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_count": 4993
+      },
+      "domestic_visitors": {
+        "dtype": "float64",
+        "missing_count": 969,
+        "missing_rate": 0.19407170038053276,
+        "unique_count": 3673
+      },
+      "foreign_visitors": {
+        "dtype": "float64",
+        "missing_count": 969,
+        "missing_rate": 0.19407170038053276,
+        "unique_count": 2873
+      },
+      "total_visitors": {
+        "dtype": "float64",
+        "missing_count": 30,
+        "missing_rate": 0.006008411776487082,
+        "unique_count": 4484
+      }
+    }
+  },
+  "tags": [
+    "time-series",
+    "multivariate",
+    "high-missing-rate"
+  ],
+  "generated_at": "2026-09-11T15:24:54.875538+00:00"
+}

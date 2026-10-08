@@ -1,0 +1,52 @@
+{
+  "dataset_info": {
+    "id": "TOUR_SAMPLE_01",
+    "name": "관광 샘플 데이터"
+  },
+  "profile_stats": {
+    "row_count": 5,
+    "column_count": 4,
+    "column_names": [
+      "date",
+      "region",
+      "visitors",
+      "tour_type"
+    ],
+    "data_types": {
+      "date": "datetime64[ns]",
+      "region": "object",
+      "visitors": "float64",
+      "tour_type": "object"
+    },
+    "missing_count": {
+      "date": 0,
+      "region": 0,
+      "visitors": 1,
+      "tour_type": 0
+    },
+    "missing_rate": {
+      "date": 0.0,
+      "region": 0.0,
+      "visitors": 0.2,
+      "tour_type": 0.0
+    },
+    "duplicate_count": 1,
+    "numeric_columns": [
+      "visitors"
+    ],
+    "datetime_columns": [
+      "date"
+    ],
+    "categorical_columns": [
+      "region",
+      "tour_type"
+    ]
+  },
+  "tags": [
+    "has_missing_values",
+    "has_duplicates",
+    "has_numeric_columns",
+    "has_datetime_columns",
+    "has_categorical_columns"
+  ]
+}

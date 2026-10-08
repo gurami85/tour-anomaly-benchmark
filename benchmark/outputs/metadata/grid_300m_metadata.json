@@ -1,0 +1,86 @@
+{
+  "dataset": {
+    "id": "JEJU_GRID_300M",
+    "name": "제주 시간대별 관광객 300m 격자 유동인구",
+    "source_format": "ZIP/CSV",
+    "output_format": "Parquet",
+    "reference_year": 2014,
+    "value_note": "통신 기반 계측값에 비율 또는 가중치를 적용한 유동인구 추정값",
+    "limitations": [
+      "동일인이 시간대나 지역에 따라 중복 집계될 수 있음",
+      "구체적인 보정 비율과 산출식은 확인이 제한됨"
+    ]
+  },
+  "profile": {
+    "row_count": 2860656,
+    "column_count": 6,
+    "total_cells": 17163936,
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "duplicate_rows": 0,
+    "numeric_column_count": 2,
+    "categorical_column_count": 2,
+    "datetime_column_count": 2,
+    "numeric_columns": [
+      "flow_population",
+      "flow_ratio"
+    ],
+    "categorical_columns": [
+      "grid_id",
+      "time_slot"
+    ],
+    "datetime_columns": [
+      "reference_month",
+      "data_date"
+    ],
+    "profiled_row_count": 99996,
+    "is_sampled": true,
+    "column_profiles": {
+      "reference_month": {
+        "dtype": "datetime64[ns]",
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_count": 12
+      },
+      "data_date": {
+        "dtype": "datetime64[ns]",
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_count": 12
+      },
+      "grid_id": {
+        "dtype": "string",
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_count": 10974
+      },
+      "time_slot": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_count": 24
+      },
+      "flow_population": {
+        "dtype": "float64",
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_count": 419129
+      },
+      "flow_ratio": {
+        "dtype": "float64",
+        "missing_count": 0,
+        "missing_rate": 0.0,
+        "unique_count": 463754
+      }
+    }
+  },
+  "tags": [
+    "time-series",
+    "multivariate",
+    "large-scale",
+    "sampled-profile",
+    "spatiotemporal",
+    "estimated-value"
+  ],
+  "generated_at": "2026-09-11T15:25:43.466439+00:00"
+}

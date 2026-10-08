@@ -1,0 +1,53 @@
+{
+  "dataset_info": {
+    "id": "JEJU_ARRIVAL_DAILY_01",
+    "name": "제주 입도 관광객 추이 일별 데이터",
+    "source_file": "입도 관광객 추이(일별).csv"
+  },
+  "profile_stats": {
+    "row_count": 4993,
+    "column_count": 4,
+    "column_names": [
+      "date",
+      "domestic",
+      "foreign",
+      "total"
+    ],
+    "data_types": {
+      "date": "DateTime",
+      "domestic": "Numeric",
+      "foreign": "Numeric",
+      "total": "Numeric"
+    },
+    "missing_count": {
+      "date": 0,
+      "domestic": 969,
+      "foreign": 969,
+      "total": 30
+    },
+    "missing_rate": {
+      "date": 0.0,
+      "domestic": 0.19407170038053276,
+      "foreign": 0.19407170038053276,
+      "total": 0.006008411776487082
+    },
+    "overall_missing_rate": 0.09853795313438814,
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "domestic",
+      "foreign",
+      "total"
+    ],
+    "numeric_column_count": 3,
+    "datetime_columns": [
+      "date"
+    ],
+    "has_datetime": true,
+    "categorical_columns": [],
+    "categorical_column_count": 0
+  },
+  "tags": [
+    "time-series",
+    "multivariate"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "dataset_info": {
+    "id": "JEJU_GRID_300M_2014_01",
+    "name": "제주 300m 그리드 시간대별 관광객 유동인구",
+    "source_file": "제주특별자치도_시간대별_관광객_300그리드단위_유동인구.zip",
+    "selected_csv_count": 12
+  },
+  "profile_stats": {
+    "row_count": 2860656,
+    "column_count": 6,
+    "column_names": [
+      "reference_month",
+      "data_date",
+      "grid_id",
+      "time_slot",
+      "flow_population",
+      "flow_ratio"
+    ],
+    "data_types": {
+      "reference_month": "DateTime",
+      "data_date": "DateTime",
+      "grid_id": "Text",
+      "time_slot": "Text",
+      "flow_population": "Numeric",
+      "flow_ratio": "Numeric"
+    },
+    "missing_count": {
+      "reference_month": 0,
+      "data_date": 0,
+      "grid_id": 0,
+      "time_slot": 0,
+      "flow_population": 0,
+      "flow_ratio": 0
+    },
+    "missing_rate": {
+      "reference_month": 0.0,
+      "data_date": 0.0,
+      "grid_id": 0.0,
+      "time_slot": 0.0,
+      "flow_population": 0.0,
+      "flow_ratio": 0.0
+    },
+    "overall_missing_rate": 0.0,
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "flow_population",
+      "flow_ratio"
+    ],
+    "numeric_column_count": 2,
+    "datetime_columns": [
+      "reference_month",
+      "data_date"
+    ],
+    "has_datetime": true,
+    "categorical_columns": [
+      "grid_id",
+      "time_slot"
+    ],
+    "categorical_column_count": 2,
+    "profiling_sample_size": 100000,
+    "type_inference_scope": "100,000-row sample"
+  },
+  "tags": [
+    "time-series",
+    "multivariate"
+  ]
+}
