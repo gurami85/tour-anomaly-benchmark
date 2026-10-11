@@ -89,7 +89,7 @@ def load_single(path, time_col, value_cols):
     """
     df = read_csv(path)
     df["time"] = df[time_col].astype(str)
-    table = df.set_index("time")[list(value_cols)].T
+    table = df.set_index("time")[list(value_cols)].T  # 전치하여 그룹 × 시점 형태로 만듦
     table.index.name = "group"
     return table.sort_index(axis=1)
 
