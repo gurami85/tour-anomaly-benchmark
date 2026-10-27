@@ -1,0 +1,3 @@
+# 노트북을 돌리면 생기는 것들 — 커밋하지 않는다
+out/
+.ipynb_checkpoints/
