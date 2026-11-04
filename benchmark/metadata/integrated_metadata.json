@@ -1,0 +1,87 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "SEASONAL_DEMO_01",
+      "dataset_name": "월별 계절성 예제 데이터",
+      "source_file": "seasonal_demo.csv",
+      "schema": {
+        "row_count": 60,
+        "time_column": "date",
+        "value_column": "value"
+      },
+      "time_series": {
+        "is_time_series": true,
+        "is_time_sorted": true,
+        "frequency": "MS",
+        "is_regular_interval": true,
+        "seasonal_period": 12,
+        "start_date": "2020-01-01",
+        "end_date": "2024-12-01"
+      },
+      "seasonality": {
+        "method": "detrended_lag_correlation",
+        "period": 12,
+        "score": 0.644166950196447,
+        "threshold": 0.5,
+        "detected": true,
+        "reason": "반복 상관성이 기준 이상입니다."
+      },
+      "tags": [
+        "monthly",
+        "numeric-target",
+        "regular-interval",
+        "seasonal",
+        "time-series"
+      ]
+    }
+  ],
+  "algorithms": [
+    {
+      "algorithm_id": "STL_01",
+      "algorithm_name": "STL",
+      "category": "time-series-anomaly-detection",
+      "required_tags": [
+        "time-series",
+        "numeric-target",
+        "regular-interval",
+        "seasonal"
+      ],
+      "parameters": {
+        "period_source": "dataset.time_series.seasonal_period",
+        "robust": true,
+        "anomaly_method": "residual_z_score",
+        "residual_z_threshold": 3.0
+      },
+      "outputs": [
+        "time",
+        "value",
+        "trend",
+        "seasonal",
+        "residual",
+        "anomaly_score",
+        "is_anomaly"
+      ],
+      "output_file": "stl_anomaly_result.csv"
+    },
+    {
+      "algorithm_id": "IQR_01",
+      "algorithm_name": "IQR",
+      "category": "numeric-anomaly-detection",
+      "required_tags": [
+        "numeric-target"
+      ],
+      "parameters": {
+        "iqr_multiplier": 1.5
+      },
+      "outputs": [
+        "time",
+        "value",
+        "lower_bound",
+        "upper_bound",
+        "anomaly_score",
+        "is_anomaly"
+      ],
+      "output_file": "iqr_anomaly_result.csv"
+    }
+  ]
+}
